@@ -184,6 +184,8 @@ a:focus {
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
+  transition-property: width;
+  transition-duration: 1s;
 }
 .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
@@ -194,6 +196,10 @@ a:focus {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -210,6 +216,20 @@ a:focus {
   }
 }
 @-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
   0% {
     -moz-transform: scale(1);
     transform: scale(1);

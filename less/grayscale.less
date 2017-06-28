@@ -190,6 +190,8 @@ a {
         -webkit-transition-duration: 1s;
         -moz-transition-property: -moz-transform;
         -moz-transition-duration: 1s;
+        transition-property: width;
+        transition-duration: 1s;
     }
     &:hover {
         i.animated {
@@ -201,6 +203,10 @@ a {
             -moz-animation-iteration-count: infinite;
             -webkit-animation-timing-function: linear;
             -moz-animation-timing-function: linear;
+            animation-name: pulse;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
     }
 }
@@ -223,6 +229,23 @@ a {
 }
 
 @-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
