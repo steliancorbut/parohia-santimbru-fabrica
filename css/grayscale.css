@@ -246,7 +246,9 @@ a:focus {
     transform: scale(1);
   }
 }
-.monografia-section {
+.monografia-section,
+.galerie-section,
+.contact-section {
   padding-top: 70px;
 }
 .contact-section {
@@ -281,14 +283,11 @@ a:focus {
   margin-top: 20px;
 }
 @media (min-width: 767px) {
-  .monografia-section {
-    padding-top: 70px;
-  }
-  .profilul-section {
-    padding: 70px 0;
-  }
+  .monografia-section,
+  .profilul-section,
+  .galerie-section,
   .contact-section {
-    padding-top: 70px;
+    padding: 70px 0;
   }
   #map {
     height: 400px;
