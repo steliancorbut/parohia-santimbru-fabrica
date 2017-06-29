@@ -22,7 +22,8 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    // font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Marcellus SC', serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -71,6 +72,7 @@ a {
     }
     .navbar-brand {
         font-weight: 700;
+        font-family: 'Marcellus SC', serif;
         padding: 10px 10px;
         height: 60px;
         &:focus {
@@ -146,6 +148,8 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
+            font-family: 'Marcellus SC', serif;
+            // font-family: 'Cinzel Decorative', cursive;
             font-size: 20px;
         }
         .intro-text {
@@ -157,6 +161,8 @@ a {
         padding: 0;
         .intro-body {
             .brand-heading {
+                font-family: 'Marcellus SC', serif;
+                // font-family: 'Cinzel Decorative', cursive;
                 font-size: 50px;
             }
             .intro-text {
@@ -262,7 +268,7 @@ a {
     }
 }
 
-.monografia-section {
+.monografia-section, .galerie-section, .contact-section {
     padding-top: 70px;
 }
 
@@ -300,16 +306,12 @@ a {
 }
 
 @media(min-width:767px) {
-    .monografia-section {
-        padding-top: 70px;
-    }
 
-    .profilul-section {
-        padding: 70px 0;
-    }
-
+    .monografia-section,
+    .profilul-section,
+    .galerie-section,
     .contact-section {
-        padding-top: 70px;
+        padding: 70px 0;
     }
 
     #map {
