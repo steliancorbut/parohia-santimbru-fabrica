@@ -20,7 +20,7 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -221,46 +221,61 @@
             <div class="col-lg-12" >                 
                 <h3>Galerie foto</h3>
                 <div class="col-md-4">
-                                <p>Biserica </p>
-                                <a data-fancybox="gallery" href="img/biserica.jpg">
-                                    <img class="img-responsive" src="img/biserica.jpg" alt="Biserica">
-                                </a>
-                </div>
-
-
-                <!-- <div class="col-md-4">
-                    <p>Biserica </p>
-                    <a href="img/biserica.jpg" rel="gallery1" class="fancybox img-hover-v1" title="Biserica">
-						<img class="img-responsive" src="img/biserica.jpg" alt="Biserica">
-					</a>
+                    <a data-fancybox="gallery" data-caption="Biserica" href="img/biserica-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/biserica_sm-min.jpg" alt="Biserica"></span>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/iconostas_biserica.jpg" />
+                    <a data-fancybox="gallery" data-caption="Iconostas Biserica" href="img/iconostas_biserica-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/iconostas_biserica_sm-min.jpg" alt="Iconostas Biserica"></span>
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/sfcuviosi_biserica.jpg" />
-                </div>                       
-            </div>    
-            <div class="col-lg-12" >                 
-                <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Biserica" src="img/sfcuvioase_biserica.jpg" />
+                    <a data-fancybox="gallery" data-caption="Sfinti Cuviosi - Biserica" href="img/sfcuviosi_biserica-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/sfcuviosi_biserica_sm-min.jpg" alt="Sfinti Cuviosi - Biserica"></span>
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/altar.jpg" />
-                </div>
-                <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/adormirea maicii domnului.jpg" />
-                </div>                 
-            </div>    
-            <div class="col-lg-12" >                 
-                <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/sfstefan.jpg" />
-                </div>  
-                <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/sf.stefan.jpg" />
-                </div>            
-            </div>     -->
+            </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12" >                 
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Sf.Stefan - Biserica" href="img/sfstefan-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/sfstefan_sm-min.jpg" alt="Sf.Stefan - Biserica"></span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Sfinte Cuvioase - Biserica" href="img/sfcuvioase_biserica-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/sfcuvioase_biserica_sm-min.jpg" alt="Sfinte Cuvioase - Biserica"></span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Altar - Biserica" href="img/altar-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/altar_sm-min.jpg" alt="Altar - Biserica"></span>
+                    </a>
+                </div>
+            </div>
+        </div>               
+        <div class="row">
+            <div class="col-lg-12" >                 
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Impartasanie - Biserica" href="img/impartasanie-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/impartasanie_sm-min.jpg" alt="Impartasanie - Biserica"></span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Spre altar" href="img/spre-altar-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/spre-altar_sm-min.jpg" alt="Spre altar"></span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a data-fancybox="gallery" data-caption="Repetitii la colinde" href="img/repetitie-colinde-min.jpg" class="img-hover-v1">
+                        <span><img class="thumbnail img-responsive" src="img/repetitie-colinde-sm-min.jpg" alt="Repetitii la colinde - Biserica"></span>
+                    </a>
+                </div>
+            </div>
+        </div>                  
+ 
     </section>    
 
 
@@ -278,7 +293,6 @@
 
     <!-- Map Section -->
  
-
     <section class="container text-center">    
            <div id="map"></div>
             <a href="#page-top" class="btn btn-circle page-scroll">
@@ -295,7 +309,7 @@
 
     <!-- jQuery -->
     <!-- <script src="vendor/jquery/jquery.js"></script> -->
-     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -306,8 +320,8 @@
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>     
+   <!-- fancybox javascript -->
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>         
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>

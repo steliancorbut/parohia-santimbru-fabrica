@@ -131,7 +131,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/intro-bg-min.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -255,7 +255,7 @@ a:focus {
   width: 100%;
   padding: 70px 0;
   color: white;
-  background: url(../img/parohia-santimbru-alb-negru.jpg) no-repeat center center scroll;
+  background: url(../img/parohia-santimbru-alb-negru-min.jpg) no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -284,7 +284,7 @@ a:focus {
   .profilul-section,
   .galerie-section,
   .contact-section {
-    padding: 70px 0;
+    padding-top: 70px;
   }
   #map {
     height: 400px;
@@ -308,7 +308,6 @@ a:focus {
     background: rgba(0, 0, 0, 0.3);
   }
   .img-hover-v1 img,
-  .img-hover-v2 img,
   .img-hover-v1 span:after {
     transition: all 0.5s ease-in-out;
   }
