@@ -15,12 +15,12 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Marcellus+SC" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +28,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -202,7 +221,18 @@
             <div class="col-lg-12" >                 
                 <h3>Galerie foto</h3>
                 <div class="col-md-4">
-                    <img class="thumbnail img-responsive" alt="Biserica" src="img/biserica.jpg" />
+                                <p>Biserica </p>
+                                <a data-fancybox="gallery" href="img/biserica.jpg">
+                                    <img class="img-responsive" src="img/biserica.jpg" alt="Biserica">
+                                </a>
+                </div>
+
+
+                <!-- <div class="col-md-4">
+                    <p>Biserica </p>
+                    <a href="img/biserica.jpg" rel="gallery1" class="fancybox img-hover-v1" title="Biserica">
+						<img class="img-responsive" src="img/biserica.jpg" alt="Biserica">
+					</a>
                 </div>
                 <div class="col-md-4">
                     <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/iconostas_biserica.jpg" />
@@ -226,13 +256,14 @@
                 <div class="col-md-4">
                     <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/sfstefan.jpg" />
                 </div>  
-                <!--<div class="col-md-4">
+                <div class="col-md-4">
                     <img class="thumbnail img-responsive" alt="Bootstrap template" src="img/sf.stefan.jpg" />
-                </div>             -->
-            </div>    
-
+                </div>            
+            </div>     -->
         </div>
     </section>    
+
+
     <!-- Contact Section -->
     <section id="contact" class="container text-center">
         <div class="row contact-section">
@@ -246,9 +277,10 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+ 
 
     <section class="container text-center">    
+           <div id="map"></div>
             <a href="#page-top" class="btn btn-circle page-scroll">
                 <i class="fa fa-angle-double-up animated"></i>
             </a>
@@ -262,7 +294,8 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+    <!-- <script src="vendor/jquery/jquery.js"></script> -->
+     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -273,9 +306,14 @@
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>     
+
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
 
+
+ 
 </body>
 
 </html>
