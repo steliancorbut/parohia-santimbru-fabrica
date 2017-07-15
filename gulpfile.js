@@ -58,6 +58,11 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/jquery'))
 
     gulp.src([
+            'node_modules/@fancyapps/fancybox/dist/*.*'
+        ])
+        .pipe(gulp.dest('vendor/fancybox'))
+
+    gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
             '!node_modules/font-awesome/.npmignore',

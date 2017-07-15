@@ -57,7 +57,8 @@ function init() {
 
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [{
+        styles:         
+        [{
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
@@ -71,7 +72,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 20
+                "lightness": 25
             }]
         }, {
             "featureType": "road.highway",
@@ -79,7 +80,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 17
+                "lightness": 25
             }]
         }, {
             "featureType": "road.highway",
@@ -87,9 +88,9 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 29
+                "lightness": 35
             }, {
-                "weight": 0.2
+                "weight": 0.4
             }]
         }, {
             "featureType": "road.arterial",
@@ -97,7 +98,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 18
+                "lightness": 25
             }]
         }, {
             "featureType": "road.local",
@@ -105,7 +106,7 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 16
+                "lightness": 25
             }]
         }, {
             "featureType": "poi",
@@ -136,7 +137,7 @@ function init() {
         }, {
             "elementType": "labels.icon",
             "stylers": [{
-                "visibility": "off"
+                "visibility": "on"
             }]
         }, {
             "featureType": "transit",
@@ -160,11 +161,11 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 17
+                "lightness": 25
             }, {
-                "weight": 1.2
+                "weight": 2.2
             }]
-        }]
+        }]       
     };
 
     // Get the HTML DOM element that will contain your map
